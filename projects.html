@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
   <link href="styles/main.css" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- Animate.css (optional) -->
+  <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <style>
@@ -22,24 +21,24 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-sans">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
     <a class="navbar-brand" href="index.html">
-      <img src="assets/swiftnetlogo.png" alt="swiftnetlogo" class="d-inline-block align-top" height="80">
+      <img src="assets/swiftnetlogo.png" alt="SwiftNet Logo" class="d-inline-block align-top" height="60">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto font-semibold">
+    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNav">
+      <ul class="navbar-nav ml-auto font-medium">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -52,34 +51,36 @@
   <!-- Projects Section -->
   <section class="py-5 bg-gray-50">
     <div class="container">
-      <h2 class="text-center font-bold text-3xl animate__animated animate__fadeInUp">Our Projects</h2>
-      <p class="text-center text-gray-700 mt-3 mb-5">Explore some of the exciting projects we've worked on at SwiftNet Ltd.</p>
+      <h2 class="text-center font-bold text-4xl text-green-700 animate__animated animate__fadeInUp">Our Projects</h2>
+      <p class="text-center text-gray-600 mt-2 mb-5">Explore some of the exciting projects we’ve built at SwiftNet Ltd.</p>
       
       <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm animate__animated animate__fadeInLeft">
-            <img src="assets/project1.jpg" class="card-img-top" alt="Project 1">
+        <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="assets/project1.jpg" class="card-img-top" alt="Mobile App Project">
             <div class="card-body text-center">
-              <h5 class="card-title font-semibold">Project One</h5>
+              <h5 class="card-title font-semibold text-lg">Project One</h5>
               <p class="card-text text-gray-700">A mobile app developed to enhance customer engagement for a leading retail chain.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm animate__animated animate__fadeInUp">
-            <img src="assets/project2.jpg" class="card-img-top" alt="Project 2">
+
+        <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="assets/project2.jpg" class="card-img-top" alt="AI Analytics Platform">
             <div class="card-body text-center">
-              <h5 class="card-title font-semibold">Project Two</h5>
-              <p class="card-text text-gray-700">An AI-driven platform for automating financial data analysis in banking services.</p>
+              <h5 class="card-title font-semibold text-lg">Project Two</h5>
+              <p class="card-text text-gray-700">An AI-driven platform to automate financial data analysis in banking services.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm animate__animated animate__fadeInRight">
-            <img src="assets/project3.jpg" class="card-img-top" alt="Project 3">
+
+        <div class="col-md-4 mb-4 animate__animated animate__fadeInRight animate__delay-3s">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="assets/project3.jpg" class="card-img-top" alt="Logistics Dashboard">
             <div class="card-body text-center">
-              <h5 class="card-title font-semibold">Project Three</h5>
-              <p class="card-text text-gray-700">A responsive web application to manage complex logistics operations in real-time.</p>
+              <h5 class="card-title font-semibold text-lg">Project Three</h5>
+              <p class="card-text text-gray-700">A responsive web dashboard to manage real-time logistics operations effectively.</p>
             </div>
           </div>
         </div>
@@ -91,20 +92,20 @@
   <footer class="bg-white border-t text-center py-5 mt-5">
     <div class="container">
       <div class="mb-3">
-        <a href="https://facebook.com" target="_blank" class="mx-2 text-blue-600 hover:text-blue-800">
+        <a href="https://facebook.com" target="_blank" class="mx-3 text-blue-600 hover:text-blue-800" aria-label="Facebook">
           <i class="fab fa-facebook-f fa-lg"></i>
         </a>
-        <a href="https://twitter.com" target="_blank" class="mx-2 text-blue-400 hover:text-blue-600">
+        <a href="https://twitter.com" target="_blank" class="mx-3 text-blue-400 hover:text-blue-600" aria-label="Twitter">
           <i class="fab fa-twitter fa-lg"></i>
         </a>
-        <a href="https://instagram.com" target="_blank" class="mx-2 text-pink-500 hover:text-pink-700">
+        <a href="https://instagram.com" target="_blank" class="mx-3 text-pink-500 hover:text-pink-700" aria-label="Instagram">
           <i class="fab fa-instagram fa-lg"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" class="mx-2 text-blue-700 hover:text-blue-900">
+        <a href="https://linkedin.com" target="_blank" class="mx-3 text-blue-700 hover:text-blue-900" aria-label="LinkedIn">
           <i class="fab fa-linkedin-in fa-lg"></i>
         </a>
       </div>
-      <p class="text-sm text-gray-600 mb-0">&copy; 2024 SwiftNet Technology. All rights reserved.</p>
+      <p class="text-sm text-gray-500 mb-0">&copy; 2024 SwiftNet Ltd. All rights reserved.</p>
     </div>
   </footer>
 
@@ -115,3 +116,4 @@
   <script src="scripts/main.js"></script>
 </body>
 </html>
+
