@@ -1,101 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftNet Ltd - Services</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <link href="styles/tailwind.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- Animate.css for animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <style>
-        .card {
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SwiftNet Ltd - Services</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
-<body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fade-in">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/swiftnetlogo.png" alt="swiftnetlogo" class="d-inline-block align-top" height="180">
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50 animate-fade-in-down">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="assets/swiftnetlogo.png" alt="SwiftNet Logo" class="h-12 animate-pulse">
+        <span class="text-2xl font-bold text-green-700">SwiftNet</span>
+      </a>
+      <ul class="hidden md:flex space-x-6 text-lg font-medium">
+        <li><a href="index.html" class="hover:text-green-600 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-600 transition">About</a></li>
+        <li><a href="services.html" class="text-green-700 font-semibold">Services</a></li>
+        <li><a href="projects.html" class="hover:text-green-600 transition">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-green-600 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-white text-center">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-8 animate-fade-in">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300 ease-in-out">
+          <div class="text-green-600 text-4xl mb-4"><i class="fas fa-headset"></i></div>
+          <h3 class="text-xl font-semibold mb-2">IT Consulting & Support</h3>
+          <p class="text-gray-600">Optimize IT infrastructure and receive ongoing technical support for your operations.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300 ease-in-out">
+          <div class="text-green-600 text-4xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="text-xl font-semibold mb-2">Mobile & Web Apps</h3>
+          <p class="text-gray-600">Build responsive web platforms and powerful mobile apps tailored to business needs.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300 ease-in-out">
+          <div class="text-green-600 text-4xl mb-4"><i class="fas fa-robot"></i></div>
+          <h3 class="text-xl font-semibold mb-2">AI Solutions</h3>
+          <p class="text-gray-600">Leverage artificial intelligence to drive smarter business decisions and automation.</p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-full shadow hover:bg-green-700 transition text-lg font-medium">
+          Discover More!
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section class="py-5 bg-gray-200 fade-in">
-        <div class="container">
-            <h2 class="text-center font-bold text-3xl animate__animated animate__bounce">Our Services</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card h-100 animate__animated animate__fadeInLeft">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">IT Consulting and Support</h5>
-                            <p class="card-text">Provide consulting services to optimize IT infrastructure and ongoing technical support.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 animate__animated animate__fadeInUp">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Mobile and Web Apps</h5>
-                            <p class="card-text">Develop mobile applications and responsive web applications tailored to business needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 animate__animated animate__fadeInRight">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">AI Solutions</h5>
-                            <p class="card-text">Integrate AI to enhance business operations and decision-making processes.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary btn-lg animate__animated animate__pulse">Discover More!</a>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <h3 class="text-xl font-semibold">SwiftNet Ltd</h3>
+        <p class="text-sm text-gray-400">© 2025 SwiftNet. All rights reserved.</p>
+      </div>
+      <div class="flex space-x-6 text-white text-2xl">
+        <a href="https://facebook.com" target="_blank" class="hover:text-blue-500 transition">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="hover:text-blue-400 transition">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="hover:text-pink-500 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="hover:text-blue-300 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="bg-white text-center py-3 fade-in">
-        <p class="mb-0">&copy; 2024 SwiftNet Technology. All rights reserved.</p>
-    </footer>
-
-    <!-- Bootstrap and JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
