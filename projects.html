@@ -8,6 +8,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Tailwind CSS -->
     <link href="styles/tailwind.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="styles/main.css" rel="stylesheet">
 </head>
@@ -17,26 +19,16 @@
         <a class="navbar-brand" href="index.html">
             <img src="assets/swiftnetlogo.png" alt="swiftnetlogo" class="d-inline-block align-top" height="180">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -48,27 +40,30 @@
             <p class="text-center text-gray-700 mt-3">Explore some of the exciting projects we've worked on at SwiftNet Ltd.</p>
             <div class="row mt-5">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="assets/project1.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
+                            <i class="fas fa-mobile-alt fa-2x text-indigo-600 mb-2"></i>
                             <h5 class="card-title">Project One</h5>
                             <p class="card-text">A mobile app developed for enhancing customer engagement for a leading retail chain.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="assets/project2.jpg" class="card-img-top" alt="Project 2">
                         <div class="card-body">
+                            <i class="fas fa-robot fa-2x text-indigo-600 mb-2"></i>
                             <h5 class="card-title">Project Two</h5>
                             <p class="card-text">An AI-driven solution for automating financial data analysis in banking services.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <img src="assets/project3.jpg" class="card-img-top" alt="Project 3">
                         <div class="card-body">
+                            <i class="fas fa-truck fa-2x text-indigo-600 mb-2"></i>
                             <h5 class="card-title">Project Three</h5>
                             <p class="card-text">A responsive web application for managing large-scale logistics operations.</p>
                         </div>
@@ -79,11 +74,19 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-center py-3">
-        <p class="mb-0">&copy; 2024 SwiftNet Technology. All rights reserved.</p>
+    <footer class="bg-white text-center py-4 mt-5 border-t">
+        <div class="container">
+            <p class="mb-2">&copy; 2024 SwiftNet Technology. All rights reserved.</p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="text-dark mx-2"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Bootstrap and JavaScript -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
