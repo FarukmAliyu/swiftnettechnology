@@ -1,95 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - SwiftNet Ltd</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <link href="styles/tailwind.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="styles/main.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Projects - SwiftNet Ltd</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <link href="styles/tailwind.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="styles/main.css" rel="stylesheet" />
 </head>
 <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/swiftnetlogo.png" alt="swiftnetlogo" class="d-inline-block align-top" height="180">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/swiftnetlogo.png" alt="swiftnetlogo" class="d-inline-block align-top" height="180">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="py-5 bg-gray-50">
+    <div class="container">
+      <h2 class="text-center font-bold text-3xl">Our Projects</h2>
+      <p class="text-center text-gray-700 mt-3 mb-5">Explore some of the exciting projects we've worked on at SwiftNet Ltd.</p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="assets/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">A mobile app developed for enhancing customer engagement for a leading retail chain.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="assets/project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text">An AI-driven solution for automating financial data analysis in banking services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="assets/project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text">A responsive web application for managing large-scale logistics operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-4 mt-5 border-t">
+    <div class="container">
+      <div class="mb-3">
+        <a href="https://facebook.com" target="_blank" class="mx-2 text-blue-600 hover:text-blue-800">
+          <i class="fab fa-facebook-f fa-lg"></i>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
-            </ul>
-        </div>
-    </nav>
+        <a href="https://twitter.com" target="_blank" class="mx-2 text-blue-400 hover:text-blue-600">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="mx-2 text-pink-500 hover:text-pink-700">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="mx-2 text-blue-700 hover:text-blue-900">
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </a>
+      </div>
+      <p class="text-sm text-gray-600 mb-0">&copy; 2024 SwiftNet Technology. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Projects Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center font-bold text-3xl">Our Projects</h2>
-            <p class="text-center text-gray-700 mt-3">Explore some of the exciting projects we've worked on at SwiftNet Ltd.</p>
-            <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <img src="assets/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <i class="fas fa-mobile-alt fa-2x text-indigo-600 mb-2"></i>
-                            <h5 class="card-title">Project One</h5>
-                            <p class="card-text">A mobile app developed for enhancing customer engagement for a leading retail chain.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <img src="assets/project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <i class="fas fa-robot fa-2x text-indigo-600 mb-2"></i>
-                            <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">An AI-driven solution for automating financial data analysis in banking services.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <img src="assets/project3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <i class="fas fa-truck fa-2x text-indigo-600 mb-2"></i>
-                            <h5 class="card-title">Project Three</h5>
-                            <p class="card-text">A responsive web application for managing large-scale logistics operations.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white text-center py-4 mt-5 border-t">
-        <div class="container">
-            <p class="mb-2">&copy; 2024 SwiftNet Technology. All rights reserved.</p>
-            <div class="d-flex justify-content-center">
-                <a href="#" class="text-dark mx-2"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-lg"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
