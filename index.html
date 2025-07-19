@@ -1,122 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftNet Ltd</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <link href="styles/tailwind.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- Font Awesome for social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftNet Ltd</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
-<body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fade-in">
-        <a class="navbar-brand" href="#">
-            <img src="assets/swiftnetlogo.png" alt="swiftnetlogo" class="d-inline-block align-top" height="100">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav ml-4">
-                <li class="nav-item">
-                    <a class="nav-link text-lg font-bold" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg font-bold" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg font-bold" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg font-bold" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg font-bold" href="projects.html">Projects</a>
-                </li>
-            </ul>
-            <!-- Search Form -->
-            <form class="form-inline my-2 my-lg-0 ml-4">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- Hero Section -->
-    <div class="container text-center py-5 fade-in">
-        <h1 class="display-4 font-bold">Welcome to SwiftNet Technology</h1>
-        <p class="lead">Innovative Tech Solutions for Your Business</p>
-        <a href="#problems" class="btn btn-primary btn-lg mt-3">Learn More</a>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-4 py-4">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="assets/swiftnetlogo.png" alt="SwiftNet Logo" class="h-12">
+        <span class="text-2xl font-bold text-green-700">SwiftNet</span>
+      </a>
+      <ul class="hidden md:flex space-x-6 text-lg font-medium">
+        <li><a href="#" class="hover:text-green-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-600">About</a></li>
+        <li><a href="services.html" class="hover:text-green-600">Services</a></li>
+        <li><a href="projects.html" class="hover:text-green-600">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-green-600">Contact</a></li>
+      </ul>
+      <form class="hidden md:block">
+        <input type="text" placeholder="Search..." class="border rounded-l px-3 py-2 focus:outline-none" />
+        <button class="bg-green-600 text-white px-4 py-2 rounded-r hover:bg-green-700">Search</button>
+      </form>
     </div>
+  </nav>
 
-    <!-- IT Problems and Solutions Section -->
-    <section id="problems" class="py-5 bg-gray-200 fade-in fade-in-delay">
-        <div class="container">
-            <h2 class="text-center font-bold text-3xl">Common IT Problems and Solutions</h2>
-            <div class="row mt-4">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="assets/problem1.jpg" class="card-img-top" alt="">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Network Issues</h5>
-                            <p class="card-text">Experiencing slow or unreliable network connectivity? We identify and resolve network bottlenecks to ensure optimal performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="assets/problem2.jpg" class="card-img-top" alt="">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Data Security Breaches</h5>
-                            <p class="card-text">Worried about data breaches? We implement robust security measures to protect your sensitive information.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="assets/problem3.jpg" class="card-img-top" alt="">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Software Failures</h5>
-                            <p class="card-text">Are you facing frequent software crashes? We provide software diagnostics and support for a seamless experience.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="assets/problem4.jpg" class="card-img-top" alt="">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Hardware Malfunctions</h5>
-                            <p class="card-text">Experiencing hardware failures? Our team can quickly diagnose and repair hardware issues to minimize downtime.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-600 to-green-400 text-white text-center py-20">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to SwiftNet Technology</h1>
+    <p class="text-xl mb-6">Innovative Tech Solutions for Your Business</p>
+    <a href="#problems" class="bg-white text-green-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition">Learn More</a>
+  </section>
+
+  <!-- IT Problems & Solutions -->
+  <section id="problems" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Common IT Problems & Solutions</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="assets/problem1.jpg" alt="Network Issues" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold mb-2">Network Issues</h3>
+            <p class="text-gray-600">We identify and resolve network bottlenecks to ensure optimal performance.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white text-center py-4 fade-in">
-        <p>&copy; 2024 SwiftNet Technology. All rights reserved.</p>
-        <div class="social-icons mt-2">
-            <a href="#" class="text-dark mx-2"><i class="fab fa-facebook fa-lg"></i></a>
-            <a href="#" class="text-dark mx-2"><i class="fab fa-twitter fa-lg"></i></a>
-            <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
-            <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="assets/problem2.jpg" alt="Data Security" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold mb-2">Data Security Breaches</h3>
+            <p class="text-gray-600">We implement robust security measures to protect your sensitive information.</p>
+          </div>
         </div>
-    </footer>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="assets/problem3.jpg" alt="Software Failures" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold mb-2">Software Failures</h3>
+            <p class="text-gray-600">We provide diagnostics and support for seamless software experience.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="assets/problem4.jpg" alt="Hardware Malfunctions" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold mb-2">Hardware Malfunctions</h3>
+            <p class="text-gray-600">We quickly diagnose and repair hardware to minimize your downtime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap and JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center py-6">
+    <p>&copy; 2025 SwiftNet Technology. All rights reserved.</p>
+    <div class="mt-3 space-x-4">
+      <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram fa-lg"></i></a>
+    </div>
+  </footer>
+
 </body>
 </html>
-
 
